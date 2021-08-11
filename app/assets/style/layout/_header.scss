@@ -1,0 +1,13 @@
+//*-------------------------*/
+//* header
+//*-------------------------*/
+.navbar{
+  .logo{
+    @include desktop(992){
+      @include posCenter;
+    }
+  }
+}
+
+
+
