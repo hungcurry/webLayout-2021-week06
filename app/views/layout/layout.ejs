@@ -13,7 +13,16 @@
 </head>
 
 <body>
-
+  <!-- header -->
+  <header>
+    <%- include('../layout/header') -%>
+    <%- include('../modules/jumbotron') -%>
+  </header>
+  <!-- 內容-->
+    <%- contents %>
+  <!-- footer -->
+    <%- include('../layout/footer') -%> 
+    <%- include('../modules/modal') -%>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
