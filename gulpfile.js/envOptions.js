@@ -25,6 +25,7 @@ let envOptions = {
       `${srcPath}/**/*.html`,
     ],
     ejsSrc: [
+      `${srcPath}/views/**/*.ejs`,
       `${srcPath}**/*.ejs`,
     ],
     path: distPath,

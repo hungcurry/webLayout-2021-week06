@@ -89,9 +89,9 @@ $theme-colors: (
   "thirdly":    $thirdly,
   "fourthly":   $fourthly,
 
-  "white":   $white,
-  "black":   $black,
-
+  "white":      $white,
+  "black":      $black,
+  "gray-600":   $gray-600,
 
   "success":    $success,
   "info":       $info,
@@ -272,8 +272,8 @@ $spacers: (
   8: 3.2rem,
   9: 3.6rem, 
   10: 4rem,
-  11: 5rem,
-  12: 6rem,
+  11: 4.4rem,
+  12: 4.8rem,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;

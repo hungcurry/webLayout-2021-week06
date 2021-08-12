@@ -54,7 +54,7 @@
 //@import "offcanvas";
 //@import "placeholders";
 // custom
-@import "modules/banner";
+@import "modules/jumbotron";
 @import "modules/subNav";
 @import "modules/scrollTop";
 @import "modules/modal";
@@ -75,9 +75,10 @@
 //-----------------
 // layout
 //-----------------
+@import "layout/layout";
 @import "layout/header";
 @import "layout/footer";
-@import "layout/layout";
+
 
 //-----------------
 // pages
