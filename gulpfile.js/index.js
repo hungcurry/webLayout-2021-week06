@@ -5,6 +5,8 @@ const minimist = require('minimist');
 const browserSync = require('browser-sync').create();
 const { envOptions } = require('./envOptions');
 
+
+
 let options = minimist(process.argv.slice(2), envOptions);
 //現在開發狀態
 console.log(`Current mode：${options.env}`);

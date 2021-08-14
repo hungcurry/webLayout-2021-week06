@@ -60,6 +60,8 @@ a{
   text-decoration: none;
   word-break: break-all;
   display: inline-block;
+  position: relative;
+  z-index: 2;
 }
 * {
   // outline: 1px solid red;

@@ -1,0 +1,32 @@
+//*-------------------------*/
+//* recommend
+//*-------------------------*/
+.swiper-container {
+  @include width(100% , 100%);
+  .swiper-slide {
+    width: 35rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img{
+      width: 35rem;
+      height: 35rem;
+    }
+  }
+}
+// 狀態修改
+.swiper-pagination-bullet {
+  background: $gray-600;
+  opacity: 0.6;
+}
+.swiper-pagination-bullet-active {
+  background-color: $secondary;
+  opacity: 1;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 7rem;
+}
+
+
