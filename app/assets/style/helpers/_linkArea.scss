@@ -5,6 +5,8 @@
   @include width(100% , 100%);
   display: block;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
   text-indent: -100%;
   overflow: hidden;
