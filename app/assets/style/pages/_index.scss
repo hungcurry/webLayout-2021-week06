@@ -45,5 +45,23 @@
     }
   }
 }
-
-
+/*-------------------------*/
+/* review
+---------------------------*/
+.review{
+  span{
+    display: inline-block;
+  }
+  &＿img{
+    background-image: url("../../assets/images/people2.png");
+  }
+  &＿box{
+    background-color: rgba(39,3,20,0.9);
+  }
+  .btn{
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-left: 3.7rem;
+    padding-right: 3.7rem;
+  }
+}
