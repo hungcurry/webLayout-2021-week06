@@ -134,5 +134,16 @@ $utilities: map-merge(
         scale-down,
       ),
     ),
+    'cursor:': (
+      property: cursor,
+      class: cursor,
+      values: (
+        help,
+        move,
+        pointer,
+        crosshair,
+        auto,
+      ),
+    ),
   )
 );
