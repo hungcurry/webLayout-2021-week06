@@ -17,12 +17,12 @@ current: checkout
                 <p class="fz-s fz-md-base fw-300">確認訂單</p>
               </div>
             </div>
-            <div class="col-3 item active">
+            <div class="col-3 item">
               <div class="timeline＿pointer">
                 <p class="fz-s fz-md-base fw-300">填寫訂購資訊</p>
               </div>
             </div>
-            <div class="col-3 item">
+            <div class="col-3 item active">
               <div class="timeline＿pointer">
                 <p class="fz-s fz-md-base fw-300">填寫付款資訊</p>
               </div>
@@ -37,25 +37,20 @@ current: checkout
       </div>
       <div class="row">
         <div class="col-lg-4 order-lg-last d-lg-flex flex-lg-nowrap flex-lg-column">
-          <h2 class="fz-m fw-500 mb-4 mb-lg-5">訂購人資訊</h2>
-          <form class="flex-lg-grow-1">
+          <h2 class="fz-m fw-500 mb-4 mb-lg-5">付款資訊</h2>
+          <form class="flex-lg-grow-1 mb-10">
             <div class="mb-5">
-              <label for="checkemail" class="form-label text-black mb-1">Email</label>
-              <input type="email" name="dataEmail" id="checkemail" class="form-control fz-base" placeholder="example@gmail.com" required>
+              <label for="checkcredit" class="form-label text-black mb-1">信用卡帳號</label>
+              <input type="text" name="dataCredit" id="checkcredit" class="form-control fz-base" placeholder="xxxx-xxxx-xxxx-xxxx" required>
             </div>
             <div class="mb-5">
-              <label for="checkname" class="form-label text-black mb-1">姓名</label>
-              <input type="text" name="dataName" id="checkname" class="form-control fz-base" placeholder="請輸入 姓名" required>
-            </div>
-            <div class="mb-5">
-              <label for="checkphone" class="form-label text-black mb-1">聯絡電話</label>
-              <input type="tel" name="dataPhone" id="checkphone" class="form-control fz-base" placeholder="請輸入電話" required>
+              <label for="checkdate" class="form-label text-black mb-1">有效日期</label>
+              <input type="date" name="dataDate" id="checkdate" class="form-control fz-base" placeholder="(MM/YY)" required>
             </div>
             <div class="mb-1">
-              <label for="checkcode" class="form-label text-black mb-1">優惠碼</label>
-              <input type="text" name="dataCode" id="checkcode" class="form-control fz-base" placeholder="TG87526" required>
+              <label for="checkpassword" class="form-label text-black mb-1">安全碼</label>
+              <input type="password" name="dataPassword" id="checkpassword" class="form-control fz-base" placeholder="***" autocomplete="off" required>
             </div>
-            <small class="text-primary d-block text-end mb-10">優惠碼已生效</small>
           </form>
           <div class="priceouter mb-6 mb-lg-3">
             <!-- 小計 -->
@@ -83,7 +78,7 @@ current: checkout
               </p>
             </div>
           </div>
-          <a href="./checkout-C.html" class="btn btn-lg btn-secondary text-white w-100 fz-base py-3 lh-sm d-none d-lg-block">下一步</a>
+          <a href="./checkout-D.html" class="btn btn-lg btn-secondary text-white w-100 fz-base py-3 lh-sm d-none d-lg-block">下一步</a>
         </div>
         <div class="col-lg-8 d-lg-flex flex-lg-column">
           <!-- cart -->
@@ -316,10 +311,10 @@ current: checkout
           </ul>
           <div class="row gx-4 gx-lg-7 mt-7 mb-10 mt-lg-3 mb-lg-0">
             <div class="col-6 col-lg-3">
-              <a href="./checkout-A.html" class="btn btn-lg btn-outline-primary w-100 fz-base py-3 lh-sm">返回</a>
+              <a href="./checkout-B.html" class="btn btn-lg btn-outline-primary w-100 fz-base py-3 lh-sm">返回</a>
             </div>
             <div class="col-6">
-              <a href="./checkout-C.html" class="btn btn-lg btn-secondary w-100 fz-base py-3 lh-sm d-lg-none">下一步</a>
+              <a href="./checkout-D.html" class="btn btn-lg btn-secondary w-100 fz-base py-3 lh-sm d-lg-none">下一步</a>
             </div>
           </div>
         </div>
