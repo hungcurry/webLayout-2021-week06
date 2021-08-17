@@ -1,0 +1,329 @@
+---
+title: 台北當代藝術展-結帳頁
+layout: ./app/views/layout/layoutCheck.ejs
+engine: ejs
+current: checkout
+---
+
+<main class="main">
+  <section class="checkout">
+    <div class="container">
+      <!-- timeline -->
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row gx-0 timeline position-relative py-5 py-md-7">
+            <div class="col-3 item">
+              <div class="timeline＿pointer">
+                <p class="fz-s fz-md-base fw-300">確認訂單</p>
+              </div>
+            </div>
+            <div class="col-3 item active">
+              <div class="timeline＿pointer">
+                <p class="fz-s fz-md-base fw-300">填寫訂購資訊</p>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <div class="timeline＿pointer">
+                <p class="fz-s fz-md-base fw-300">填寫付款資訊</p>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <div class="timeline＿pointer">
+                <p class="fz-s fz-md-base fw-300">完成訂購</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 order-lg-last d-lg-flex flex-lg-nowrap flex-lg-column">
+          <h2 class="fz-m fw-500 mb-4 mb-lg-5">訂購人資訊</h2>
+          <form class="flex-lg-grow-1">
+            <div class="mb-5">
+              <label for="checkemail" class="form-label text-black mb-1">Email</label>
+              <input type="email" name="dataEmail" id="checkemail" class="form-control fz-base" placeholder="example@gmail.com" required>
+            </div>
+            <div class="mb-5">
+              <label for="checkname" class="form-label text-black mb-1">姓名</label>
+              <input type="text" name="dataName" id="checkname" class="form-control fz-base" placeholder="請輸入 姓名" required>
+            </div>
+            <div class="mb-5">
+              <label for="checkphone" class="form-label text-black mb-1">聯絡電話</label>
+              <input type="tel" name="dataPhone" id="checkphone" class="form-control fz-base" placeholder="請輸入電話" required>
+            </div>
+            <div class="mb-1">
+              <label for="checkcode" class="form-label text-black mb-1">優惠碼</label>
+              <input type="text" name="dataCode" id="checkcode" class="form-control fz-base" placeholder="TG87526" required>
+            </div>
+            <small class="text-primary d-block text-end mb-10">優惠碼已生效</small>
+          </form>
+          <div class="priceouter mb-6 mb-lg-3">
+            <!-- 小計 -->
+            <div class="d-flex justify-content-between align-items-center mb-1 mb-lg-2">
+              <p class="fw-500">小計:</p>
+              <p class="fw-300">
+                <span>NT$</span>
+                <span>3150</span>
+              </p>
+            </div>
+            <!-- 折扣 -->
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <p class="fw-500">折扣:</p>
+              <p class="fw-300">
+                <span>-NT$</span>
+                <span>50</span>
+              </p>
+            </div>
+            <!-- 總金額 -->
+            <div class="fz-m fw-500 d-flex justify-content-between align-items-center">
+              <p >總金額:</p>
+              <p >
+                <span>NT$</span>
+                <span>3100</span>
+              </p>
+            </div>
+          </div>
+          <a href="./checkout-C.html" class="btn btn-lg btn-secondary text-white w-100 fz-base py-3 lh-sm d-none d-lg-block">下一步</a>
+        </div>
+        <div class="col-lg-8 d-lg-flex flex-lg-column">
+          <!-- cart -->
+          <ul class="cartList row d-lg-flex flex-lg-nowrap flex-lg-column flex-lg-grow-1">
+            <li class="mb-5">
+              <div class="row gx-4 gx-lg-7">
+                <div class="col-6 col-lg-3">
+                  <img src="./assets/images/product-1.jpg" class="image w-100 object-cover" alt="productDesign">
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h3 class="fz-base fw-700 mb-1 d-flex align-items-center justify-content-between">
+                    <span class="text-truncate">2021 台味設計展</span>
+                  </h3>
+                  <p class="fw-500 mb-1">01 JUN — 31 OCT</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <span class="text-muted me-1">全票</span>
+                      <span class="fz-m fw-700 d-lg-none">1</span>
+                    </div>
+                    <div class="fz-m fw-700 d-lg-none">NT$350</div>
+                  </div>
+                </div>
+                <!-- desktop-price -->
+                <div class="col-lg-6 d-none d-lg-flex align-items-center">
+                  <div class="fz-m fw-700">NT$350</div>
+                  <div class="fz-m fw-700 px-1 px-md-3 ms-lg-12">1</div>
+                </div>
+              </div>
+            </li>
+            <li class="mb-5">
+              <div class="row gx-4 gx-lg-7">
+                <div class="col-6 col-lg-3">
+                  <img src="./assets/images/product-2.jpg" class="image w-100 object-cover" alt="productDesign">
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h3 class="fz-base fw-700 mb-1 d-flex align-items-center justify-content-between">
+                    <span class="text-truncate">No.22 線上設計展</span>
+                  </h3>
+                  <p class="fw-500 mb-1">01 JUN — 31 OCT</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <span class="text-muted me-1">全票</span>
+                      <span class="fz-m fw-700 d-lg-none">1</span>
+                    </div>
+                    <div class="fz-m fw-700 d-lg-none">NT$350</div>
+                  </div>
+                </div>
+                <!-- desktop-price -->
+                <div class="col-lg-6 d-none d-lg-flex align-items-center">
+                  <div class="fz-m fw-700">NT$350</div>
+                  <div class="fz-m fw-700 px-1 px-md-3 ms-lg-12">1</div>
+                </div>
+              </div>
+            </li>
+            <li class="mb-5">
+              <div class="row gx-4 gx-lg-7">
+                <div class="col-6 col-lg-3">
+                  <img src="./assets/images/product-3.jpg" class="image w-100 object-cover" alt="productDesign">
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h3 class="fz-base fw-700 mb-1 d-flex align-items-center justify-content-between">
+                    <span class="text-truncate">高雄設計節</span>
+                  </h3>
+                  <p class="fw-500 mb-1">01 JUN — 31 OCT</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <span class="text-muted me-1">全票</span>
+                      <span class="fz-m fw-700 d-lg-none">1</span>
+                    </div>
+                    <div class="fz-m fw-700 d-lg-none">NT$350</div>
+                  </div>
+                </div>
+                <!-- desktop-price -->
+                <div class="col-lg-6 d-none d-lg-flex align-items-center">
+                  <div class="fz-m fw-700">NT$350</div>
+                  <div class="fz-m fw-700 px-1 px-md-3 ms-lg-12">1</div>
+                </div>
+              </div>
+            </li>
+            <li class="mb-5">
+              <div class="row gx-4 gx-lg-7">
+                <div class="col-6 col-lg-3">
+                  <img src="./assets/images/product-1.jpg" class="image w-100 object-cover" alt="productDesign">
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h3 class="fz-base fw-700 mb-1 d-flex align-items-center justify-content-between">
+                    <span class="text-truncate">2021 台味設計展</span>
+                  </h3>
+                  <p class="fw-500 mb-1">01 JUN — 31 OCT</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <span class="text-muted me-1">全票</span>
+                      <span class="fz-m fw-700 d-lg-none">1</span>
+                    </div>
+                    <div class="fz-m fw-700 d-lg-none">NT$350</div>
+                  </div>
+                </div>
+                <!-- desktop-price -->
+                <div class="col-lg-6 d-none d-lg-flex align-items-center">
+                  <div class="fz-m fw-700">NT$350</div>
+                  <div class="fz-m fw-700 px-1 px-md-3 ms-lg-12">1</div>
+                </div>
+              </div>
+            </li>
+            <li class="mb-5">
+              <div class="row gx-4 gx-lg-7">
+                <div class="col-6 col-lg-3">
+                  <img src="./assets/images/product-2.jpg" class="image w-100 object-cover" alt="productDesign">
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h3 class="fz-base fw-700 mb-1 d-flex align-items-center justify-content-between">
+                    <span class="text-truncate">No.22 線上設計展</span>
+                  </h3>
+                  <p class="fw-500 mb-1">01 JUN — 31 OCT</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <span class="text-muted me-1">全票</span>
+                      <span class="fz-m fw-700 d-lg-none">1</span>
+                    </div>
+                    <div class="fz-m fw-700 d-lg-none">NT$350</div>
+                  </div>
+                </div>
+                <!-- desktop-price -->
+                <div class="col-lg-6 d-none d-lg-flex align-items-center">
+                  <div class="fz-m fw-700">NT$350</div>
+                  <div class="fz-m fw-700 px-1 px-md-3 ms-lg-12">1</div>
+                </div>
+              </div>
+            </li>
+            <li class="mb-5">
+              <div class="row gx-4 gx-lg-7">
+                <div class="col-6 col-lg-3">
+                  <img src="./assets/images/product-3.jpg" class="image w-100 object-cover" alt="productDesign">
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h3 class="fz-base fw-700 mb-1 d-flex align-items-center justify-content-between">
+                    <span class="text-truncate">高雄設計節</span>
+                  </h3>
+                  <p class="fw-500 mb-1">01 JUN — 31 OCT</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <span class="text-muted me-1">全票</span>
+                      <span class="fz-m fw-700 d-lg-none">1</span>
+                    </div>
+                    <div class="fz-m fw-700 d-lg-none">NT$350</div>
+                  </div>
+                </div>
+                <!-- desktop-price -->
+                <div class="col-lg-6 d-none d-lg-flex align-items-center">
+                  <div class="fz-m fw-700">NT$350</div>
+                  <div class="fz-m fw-700 px-1 px-md-3 ms-lg-12">01</div>
+                </div>
+              </div>
+            </li>
+            <li class="mb-5">
+              <div class="row gx-4 gx-lg-7">
+                <div class="col-6 col-lg-3">
+                  <img src="./assets/images/product-1.jpg" class="image w-100 object-cover" alt="productDesign">
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h3 class="fz-base fw-700 mb-1 d-flex align-items-center justify-content-between">
+                    <span class="text-truncate">2021 台味設計展</span>
+                  </h3>
+                  <p class="fw-500 mb-1">01 JUN — 31 OCT</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <span class="text-muted me-1">全票</span>
+                      <span class="fz-m fw-700 d-lg-none">1</span>
+                    </div>
+                    <div class="fz-m fw-700 d-lg-none">NT$350</div>
+                  </div>
+                </div>
+                <!-- desktop-price -->
+                <div class="col-lg-6 d-none d-lg-flex align-items-center">
+                  <div class="fz-m fw-700">NT$350</div>
+                  <div class="fz-m fw-700 px-1 px-md-3 ms-lg-12">1</div>
+                </div>
+              </div>
+            </li>
+            <li class="mb-5">
+              <div class="row gx-4 gx-lg-7">
+                <div class="col-6 col-lg-3">
+                  <img src="./assets/images/product-2.jpg" class="image w-100 object-cover" alt="productDesign">
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h3 class="fz-base fw-700 mb-1 d-flex align-items-center justify-content-between">
+                    <span class="text-truncate">No.22 線上設計展</span>
+                  </h3>
+                  <p class="fw-500 mb-1">01 JUN — 31 OCT</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <span class="text-muted me-1">全票</span>
+                      <span class="fz-m fw-700 d-lg-none">1</span>
+                    </div>
+                    <div class="fz-m fw-700 d-lg-none">NT$350</div>
+                  </div>
+                </div>
+                <!-- desktop-price -->
+                <div class="col-lg-6 d-none d-lg-flex align-items-center">
+                  <div class="fz-m fw-700">NT$350</div>
+                  <div class="fz-m fw-700 px-1 px-md-3 ms-lg-12">1</div>
+                </div>
+              </div>
+            </li>
+            <li class="mb-5">
+              <div class="row gx-4 gx-lg-7">
+                <div class="col-6 col-lg-3">
+                  <img src="./assets/images/product-3.jpg" class="image w-100 object-cover" alt="productDesign">
+                </div>
+                <div class="col-6 col-lg-3">
+                  <h3 class="fz-base fw-700 mb-1 d-flex align-items-center justify-content-between">
+                    <span class="text-truncate">高雄設計節</span>
+                  </h3>
+                  <p class="fw-500 mb-1">01 JUN — 31 OCT</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <span class="text-muted me-1">全票</span>
+                      <span class="fz-m fw-700 d-lg-none">1</span>
+                    </div>
+                    <div class="fz-m fw-700 d-lg-none">NT$350</div>
+                  </div>
+                </div>
+                <!-- desktop-price -->
+                <div class="col-lg-6 d-none d-lg-flex align-items-center">
+                  <div class="fz-m fw-700">NT$350</div>
+                  <div class="fz-m fw-700 px-1 px-md-3 ms-lg-12">1</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="row gx-4 gx-lg-7 mt-7 mb-10 mt-lg-3 mb-lg-0">
+            <div class="col-6 col-lg-3">
+              <a href="./checkout-A.html" class="btn btn-lg btn-outline-primary w-100 fz-base py-3 lh-sm">返回</a>
+            </div>
+            <div class="col-6">
+              <a href="./checkout-C.html" class="btn btn-lg btn-secondary w-100 fz-base py-3 lh-sm d-lg-none">下一步</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
