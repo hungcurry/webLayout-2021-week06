@@ -2,6 +2,7 @@
 //* header
 //*-------------------------*/
 .navbar{
+  outline: 0.1rem solid $black;
   .logo{
     @include desktop(992){
       @include posCenter;

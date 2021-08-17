@@ -6,7 +6,7 @@
   height: 48rem;
   .row{
     padding-bottom: 8rem;
-    @include desktop(768){
+    @include pad(768){
       padding-bottom: 0rem;
     }
   }

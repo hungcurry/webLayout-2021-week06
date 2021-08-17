@@ -40,7 +40,7 @@
       right: 3.4rem;
       width: 3.9rem;
     }
-    @include pad(1200){
+    @include desktop(1200){
       top: 5.3rem;
     }
   }

@@ -6,7 +6,7 @@
     @include pad(768){
       position: relative;
     }
-    @include pad(1200){
+    @include desktop(1200){
       width: 35rem;
     }
   }
@@ -40,7 +40,7 @@
       width: 3.9rem;
       height: calc(100% - 8rem);
     }
-    @include pad(1024){
+    @include desktop(1024){
       right: 2.4rem;
     }
   }
