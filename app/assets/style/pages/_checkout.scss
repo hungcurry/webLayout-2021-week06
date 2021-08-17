@@ -11,6 +11,21 @@
       overflow-y: auto; 
     }
   }
+  .checkoutFinish{
+    padding-top: 4.2rem;
+    @include pad(992){
+      padding-top: 10.2rem;
+    }
+    .check{
+      font-size: 4.4rem;
+    }
+    .text{
+      margin-bottom: 8rem;
+      @include pad(992){
+        margin-bottom: 9.6rem;
+      }
+    }
+  }
 }
 // scrollbar 
 .cartList::-webkit-scrollbar {
