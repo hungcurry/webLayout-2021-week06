@@ -1,38 +1,36 @@
 //-----------------
 // config
 //-----------------
-
-
+// bootstrap
 @import "functions";
 @import "config/variables";
 @import "mixins";
 @import "utilities";
 // @import "bootstrap";
 
-
 // custom
-@import "config/scssMap";
-@import "config/forLoop";
 @import "config/customFunctions";
 @import "config/customVariables";
 @import "config/customMixin";
 @import "config/customExtend";
-//@import "config/rfs"; 
+@import "config/scssMap";
+@import "config/forLoop";
 
 @import "root";
 @import "reboot";
 @import "config/base";
+@import "config/import";
+//@import "config/rfs";
 
 //-----------------
 // modules 
 //-----------------
-
-
 // bootstrap
 @import "type";
 @import "images";
 @import "containers";
 @import "grid";
+
 // ---元件------
 //@import "tables";
 @import "forms";
@@ -60,7 +58,6 @@
 @import "offcanvas";
 //@import "placeholders";
 
-
 // custom
 @import "modules/jumbotron";
 @import "modules/subNav";
@@ -75,19 +72,16 @@
 //-----------------
 // helpers
 //-----------------
-
-
 // bootstrap
 @import "helpers";
 
-
 // custom
-@import "helpers/title";
-@import "helpers/list";
+//@import "helpers/title";
+//@import "helpers/list";
 //@import "helpers/clearfix";
 //@import "helpers/position";
+//@import "helpers/gradient";
 @import "helpers/hidden";
-@import "helpers/gradient";
 @import "helpers/linkArea";
 
 //-----------------
@@ -96,7 +90,6 @@
 @import "layout/layout";
 @import "layout/header";
 @import "layout/footer";
-
 
 //-----------------
 // pages
