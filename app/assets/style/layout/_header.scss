@@ -1,13 +1,21 @@
 //*-------------------------*/
 //* header
 //*-------------------------*/
-.navbar{
-  outline: 0.1rem solid $black;
+.header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: $white;
+  @include pad(992){
+    position: static;
+  }
+  .navbar{
+    border-bottom: 0.1rem solid $black;
+  }
   .logo{
     @include desktop(992){
       @include posCenter;
     }
   }
 }
-
-

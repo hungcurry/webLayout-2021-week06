@@ -3,12 +3,20 @@
 //*-------------------------*/
 .nav-scroller {
   overflow-y: hidden;
+  background-color: $white;
+  @include pad(992){
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
 }
 .subNav{
   overflow-x: auto;
   white-space: nowrap;
   display: flex;
   flex-wrap: nowrap;
+  background-color: $white;
   @include pad(768){
     justify-content: center;
   }
@@ -26,5 +34,3 @@
     }
   }
 }
-
-
