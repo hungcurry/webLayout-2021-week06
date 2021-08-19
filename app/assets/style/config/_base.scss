@@ -13,6 +13,7 @@ body{
   font-size: 1.6rem;
   font-weight: 400;
 }
+:focus{ outline: 0;}
 ::selection { 
   color: $white; 
   background-color:$primary;
